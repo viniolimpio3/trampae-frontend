@@ -210,7 +210,7 @@ function Profile() {
 									userCompleteServices.map(service => {
 										return (
 											<div key={service.id} className="service-item">
-												<Link to={`profile/${user.id}`}className="votingPerson">
+												<Link to={`/profile/${user.id}`}className="votingPerson">
 													<img
 														src={service.image_url ? service.image_url : ProfileImg}
 														alt="profilePic"
