@@ -83,4 +83,9 @@ export const Modal = styled.div`
 		background-color: var(--primary);
 		color: white;
 	}
+
+	@media(max-width: 599px){
+		width: 95%;
+		height: 65%;
+	}
 `

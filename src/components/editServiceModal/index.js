@@ -69,7 +69,7 @@ function EditServiceModal({ close, service }) {
 			<Modal>
 				<FiX size={"2rem"} className="close" onClick={close} />
 
-				<h3> Edite suas informações! </h3>
+				<h3> Edite as informações de seu serviço! </h3>
 
 				<form>
 					<Input name="Título" type="text" value={title} onChange={e => setTitle(e.target.value)} />

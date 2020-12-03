@@ -95,7 +95,7 @@ function CompleteServiceModal({ close, chooseUser }) {
 						? usersList.map(user => {
 								return (
 									<div key={user.id} className="user-item" onClick={() => chooseUser(user.id)}>
-										<img src={ProfileImg} alt="profilePic" className="profilePic" />
+										<img src={user.image_url} alt="profilePic" className="profilePic" />
 										<div>
 											<strong> {user.name} </strong>
 											<span>

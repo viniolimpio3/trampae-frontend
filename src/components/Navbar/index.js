@@ -35,7 +35,7 @@ export default function Navbar({ children }) {
 			<DropDown active={active}>
 				<a href={`profile/${user.id}`} className="navItem">
 					{user.name}
-					<img src={profilePic} alt="user" className="profilePic" />
+					<img src={user.image_url ? user.image_url : profilePic} alt="user" className="profilePic" />
 				</a>
 				<Link to="/talkwithus" className="navItem">
 					Fale conosco
@@ -44,10 +44,6 @@ export default function Navbar({ children }) {
 				<Link to="/aboutus" className="navItem">
 					Sobre nós
 					<FiUsers size={'1.8rem'} />
-				</Link>
-				<Link to="/home" className="navItem">
-					Configurações
-					<FiSettings size={'1.8rem'} />
 				</Link>
 
 				<Link className="navItem" to="/logout">

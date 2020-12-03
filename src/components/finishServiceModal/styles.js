@@ -148,4 +148,22 @@ export const Modal = styled.div`
 		color: white;
 	}
 
+	@media(max-width: 599px){
+		flex-direction: column;
+		width: 95%;
+		height: 90%;
+
+		.form-section{
+			width: 100%;
+			height: 30%;
+			border: 0;
+			border-bottom: 2px solid var(--light-gray);
+		}
+
+		.results{
+			width: 100%;
+			height: 70%;
+		}
+	}
+
 `

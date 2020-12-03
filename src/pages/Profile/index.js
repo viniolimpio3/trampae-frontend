@@ -122,7 +122,10 @@ function Profile() {
 									<AiOutlineWhatsApp size={"2rem"} />
 									<span>Enviar mensagem</span>
 								</a>
-								<a>
+								<a 
+									href={`mailto:${userInfo.email}`}
+									target="_blank"
+								>
 									<AiOutlineMail size={"2rem"} />
 									<span>Mandar email</span>
 								</a>
@@ -207,7 +210,7 @@ function Profile() {
 									userCompleteServices.map(service => {
 										return (
 											<div key={service.id} className="service-item">
-												<div className="votingPerson">
+												<Link to={`profile/${user.id}`}className="votingPerson">
 													<img
 														src={service.image_url ? service.image_url : ProfileImg}
 														alt="profilePic"
@@ -219,7 +222,7 @@ function Profile() {
 															{service.city} - {service.uf}
 														</span>
 													</div>
-												</div>
+												</Link>
 
 												<div className="service-info">
 													<strong> {service.title} </strong>
@@ -239,7 +242,7 @@ function Profile() {
 				<img src={loading} type="gif" />
 			)}
 
-			{finishServiceModal ? (
+			{finishServiceModal && chosenServiceId ? (
 				<CompleteServiceModal
 					serviceId={chosenServiceId}
 					chooseUser={chooseUser}
