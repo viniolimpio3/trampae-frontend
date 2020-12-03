@@ -30,7 +30,7 @@ export default function Navbar({ children }) {
 				</div>
 
 				
-				<Link to="/new-service" className="button secondary">Novo Serviço</Link>
+				<a href="/new-service" className="button secondary">Novo Serviço</a>
 			</Container>
 			<DropDown active={active}>
 				<a href={`profile/${user.id}`} className="navItem">
