@@ -37,14 +37,14 @@ export default function Navbar({ children }) {
 					{user.name}
 					<img src={user.image_url ? user.image_url : profilePic} alt="user" className="profilePic" />
 				</a>
-				<Link to="/talkwithus" className="navItem">
+				<a href="/talkwithus" className="navItem">
 					Fale conosco
 					<FiPhoneCall size={'1.8rem'} />
-				</Link>
-				<Link to="/aboutus" className="navItem">
+				</a>
+				<a href="/aboutus" className="navItem">
 					Sobre nós
 					<FiUsers size={'1.8rem'} />
-				</Link>
+				</a>
 
 				<Link className="navItem" to="/logout">
 					Sair
