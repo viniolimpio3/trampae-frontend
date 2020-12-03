@@ -14,7 +14,7 @@ async function me(token){
 		authorization: `Bearer ${token}`
 	}})
 
-	if(res.data) res.data.image_url = Util.api_base_url(res.data.image_url)
+// 	if(res.data) res.data.image_url = Util.api_base_url(res.data.image_url)
 	
 	return !res.data ? false : res.data
 }
