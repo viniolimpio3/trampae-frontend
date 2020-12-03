@@ -140,14 +140,14 @@ export default function Home() {
             <img src={user.image_url} alt="user" className="profilePic" />
             {user.name}
           </a>
-          <Link to="/talkwithus" className="navItem">
+          <a href="/talkwithus" className="navItem">
             <FiPhoneCall size={"1.8rem"} />
             Fale conosco
-          </Link>
-          <Link to="/aboutus" className="navItem">
+          </a>
+          <a href="/aboutus" className="navItem">
             <FiUsers size={"1.8rem"} />
             Sobre nós
-          </Link>
+          </a>
           <button
             onClick={() => setIsEditProfileModalOpen(true)}
             className="navItem"
